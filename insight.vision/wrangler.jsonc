@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "insight-vision",
+  "account_id": "230005c56e2e3516f066a603a731ac83",
+  "compatibility_date": "2026-11-10",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": { "directory": "./public", "not_found_handling": "404-page" },
+  "routes": [
+    { "pattern": "insight.vision", "custom_domain": true },
+    { "pattern": "www.insight.vision", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
