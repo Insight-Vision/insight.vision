@@ -11,6 +11,7 @@ npm ci
 npm run dev
 ```
 
-Cloudflare builds deploy from `master` using `npx wrangler deploy`.
+Cloudflare builds deploy from `master`, with root directory `insight.vision`,
+using `npx wrangler deploy`.
 The Worker is `insight-vision`; custom domains are `insight.vision` and
 `www.insight.vision`. No database, storage subscription or runtime secrets are needed.
