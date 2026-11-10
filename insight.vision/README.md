@@ -13,5 +13,6 @@ npm run dev
 
 Pushes to `master` deploy automatically through Cloudflare Builds, using root
 directory `insight.vision` and deploy command `npx wrangler deploy`.
+Other branches run a deployment dry run without publishing changes.
 The Worker is `insight-vision`; custom domains are `insight.vision` and
 `www.insight.vision`. No database, storage subscription or runtime secrets are needed.
