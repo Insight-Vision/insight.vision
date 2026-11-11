@@ -113,3 +113,21 @@
 .incubator-intro p:first-child{font-family:var(--heading);font-size:21px;line-height:1.6;color:var(--ink)}
 @media(max-width:1050px){.foundation-grid,.venture-grid-three{grid-template-columns:repeat(2,minmax(0,1fr))}.header nav{gap:17px}}
 @media(max-width:700px){.hero h1{font-size:clamp(43px,9vw,60px);letter-spacing:-2.4px}.venture-grid-three,.foundation-grid{grid-template-columns:1fr}.incubator-intro{grid-template-columns:1fr;gap:18px}.foundation-grid .venture-card{min-height:0}}
+
+/* Equal-weight portfolio cards: the studio, not individual products, is the homepage focus. */
+.portfolio-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.portfolio-card{display:flex;flex-direction:column;min-width:0;min-height:280px;padding:22px 23px 24px;background:#f6f4f0;border:1px solid var(--line);border-radius:5px}
+a.portfolio-card{transition:transform .2s,box-shadow .2s}
+a.portfolio-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #28213f0c}
+.portfolio-card-top{display:flex;justify-content:space-between;align-items:center;min-height:24px;gap:8px}
+.portfolio-link-symbol{font-size:17px;color:var(--violet)}
+.portfolio-stage{color:#536c57;border:1px solid #9baa98;border-radius:99px;padding:5px 9px;font-size:10px;white-space:nowrap}
+.portfolio-card-symbol{position:relative;display:grid;place-items:center;overflow:hidden;margin:19px 0 21px;width:88px;height:88px;border-radius:5px}
+.portfolio-card-symbol span{z-index:1;font-size:22px;font-weight:750;font-family:var(--heading);letter-spacing:-1px}
+.portfolio-card-symbol i{position:absolute;width:88px;height:88px;border:1px solid currentColor;border-radius:50%;opacity:.28;right:-33px;top:-30px}
+.portfolio-card-symbol i:last-child{right:45px;top:55px}
+.portfolio-card-copy{margin-top:auto}
+.portfolio-card-copy h3{font-size:23px;letter-spacing:-.7px;margin:0 0 9px}
+.portfolio-card-copy p{color:var(--muted);font-size:13px;line-height:1.75;margin:0}
+@media(max-width:1050px){.portfolio-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.portfolio-cards{grid-template-columns:1fr;gap:12px}.portfolio-card{min-height:225px}.portfolio-card-symbol{height:70px;width:70px;margin:11px 0}.portfolio-card-copy h3{font-size:21px}}
