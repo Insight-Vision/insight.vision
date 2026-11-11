@@ -64,3 +64,34 @@
 .scha-visual .visual-tag{color:#637f8e}
 .product-scha .incubating-note{color:#527083}
 @media(max-width:700px){.scha-board{width:72%;max-width:290px}.scha-orbit{width:210px}.scha-flow-arrow{right:14%}}
+
+/* Venture studio portfolio and incubator, in the existing visual language */
+.portfolio-more{margin-top:76px;padding-top:44px;border-top:1px solid var(--line)}
+.portfolio-more-heading{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:29px}
+.portfolio-more-heading .eyebrow{margin-bottom:10px}
+.portfolio-more-heading h3{font-size:27px;letter-spacing:-1px;margin:0}
+.portfolio-more-heading>p{font-size:13px;line-height:1.8;color:var(--muted);max-width:335px;margin:0}
+.venture-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.venture-card{min-width:0;background:#f6f4f0;border:1px solid var(--line);border-radius:5px;padding:19px;display:flex;align-items:center;gap:16px}
+.venture-art{width:72px;height:72px;flex:none;border-radius:4px;position:relative;display:grid;place-items:center;overflow:hidden;background:#e8e5ed}
+.venture-art:before,.venture-art:after{content:'';position:absolute;border:1px solid currentColor;opacity:.28;border-radius:50%;width:68px;height:68px;top:-26px;right:-22px}
+.venture-art:after{width:60px;height:60px;top:38px;right:31px}
+.venture-art span{font-family:var(--heading);font-size:18px;font-weight:750;letter-spacing:-1px;z-index:1}
+.venture-indigo{background:#e1e2ed;color:#515982}.venture-sage{background:#e1e9df;color:#4b7158}
+.venture-lilac{background:#e9e2f0;color:#71578c}.venture-blue{background:#dceaf0;color:#4b788d}
+.venture-peach{background:#f1e4dc;color:#9c765b}.venture-violet{background:#e6e2eb;color:#72597c}.venture-olive{background:#e8e9dc;color:#737c54}
+.venture-card-copy{min-width:0}.venture-category{display:block;font-size:9px;letter-spacing:1.2px;font-weight:650;color:#777084;line-height:1.5}
+.venture-card h4{font-family:var(--heading);font-weight:600;font-size:17px;line-height:1.4;letter-spacing:-.5px;margin:8px 0 0;overflow-wrap:anywhere}
+.incubator{background:#eeedf2;border-top:1px solid #e3dfe8}.incubator .section-heading{margin-bottom:46px}
+.incubator .section-heading p:not(.eyebrow){max-width:345px}
+.incubator-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.incubator-step{padding:28px 27px 30px;min-height:250px;border:1px solid #ded9e5;background:#faf9f6;border-radius:5px}
+.step-index{font-size:10px;letter-spacing:1.5px;font-weight:650;color:#786a8d}
+.step-symbol{display:block;height:62px;font-size:49px;line-height:1.3;color:#8c77a9}
+.incubator-step h3{font-size:21px;letter-spacing:-.6px;margin:16px 0 10px}
+.incubator-step p{font-size:13px;line-height:1.8;color:var(--muted);margin:0;max-width:300px}
+.attentio{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;margin-top:20px;padding:30px 34px;border:1px solid #ded9e5;border-radius:5px;background:#e5e1ec}
+.attentio h3{font-size:27px;letter-spacing:-.9px;margin:9px 0 0}
+.attentio p{font-size:13px;line-height:1.85;color:#645b70;margin:0}
+@media(max-width:1050px){.venture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.incubator-step{padding:23px 20px}}
+@media(max-width:700px){.portfolio-more{margin-top:49px;padding-top:33px}.portfolio-more-heading{display:block}.portfolio-more-heading h3{font-size:24px;margin-bottom:14px}.portfolio-more-heading>p{max-width:400px}.venture-grid{grid-template-columns:1fr;gap:12px}.venture-art{width:65px;height:65px}.venture-card{padding:13px}.incubator-steps{grid-template-columns:1fr;gap:12px}.incubator-step{min-height:0}.attentio{grid-template-columns:1fr;gap:12px;padding:24px}}
