@@ -33,3 +33,34 @@
 .cabinet-visual .visual-tag{color:#637a65}
 .incubating-note{display:inline-block;color:#536c57;font-size:12px;font-weight:650}
 @media(max-width:700px){.cabinet-shelf{width:70%;max-width:280px}.cabinet-objects{gap:7px}}
+
+/* SCHA: a CSS-only media-to-calendar illustration using the existing card layout. */
+.product-scha{background:#e9edf0;border-color:#dce3e8}
+.product-scha .product-period{color:#718ea0}
+.product-scha .project-status{border-color:#a0b3be;color:#527083}
+.scha-visual{align-items:center;background:radial-gradient(ellipse at 50% 45%,#dce7ed 0%,transparent 69%)}
+.scha-orbit{position:absolute;width:255px;height:190px;border:1px solid #b8cbd6;border-radius:50%;transform:rotate(20deg) scaleX(1.3)}
+.scha-board{width:67%;max-width:320px;height:172px;position:relative;margin-bottom:19px;transform:rotate(-5deg);border:6px solid #60798c;border-radius:8px;background:#f9faf8;box-shadow:10px 13px 0 #68879c25,0 17px 34px #344d5b24}
+.scha-board-header{height:28px;border-bottom:1px solid #dce4e7;display:flex;align-items:center;gap:5px;padding:0 12px}
+.scha-board-header span{width:5px;height:5px;background:#aec1ca;border-radius:50%}
+.scha-board-header b{margin-left:auto;width:45px;height:5px;border-radius:3px;background:#dbe5e8}
+.scha-board-content{height:132px;display:flex;gap:12px;padding:13px}
+.scha-media{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:6px}
+.scha-media i{position:relative;background:#b9cdd2;border-radius:3px;overflow:hidden}
+.scha-media i:after{content:'';position:absolute;inset:0;background:#6a9295;clip-path:polygon(0 100%,40% 25%,70% 65%,100% 10%,100% 100%)}
+.scha-media i:nth-child(2){background:#e1d4bc}
+.scha-media i:nth-child(2):after{background:#ae997e}
+.scha-media i:nth-child(3){grid-column:span 2;background:#c8d8bc}
+.scha-media i:nth-child(3):after{background:#85a082}
+.scha-calendar{width:43%;border:1px solid #d9e3e8;border-radius:4px;background:#fff;padding:9px}
+.scha-calendar-heading{display:flex;justify-content:space-between;gap:5px;margin-bottom:10px}
+.scha-calendar-heading i{width:22%;height:5px;border-radius:2px;background:#d6e1e6}
+.scha-calendar-heading i:first-child{width:44%;background:#9eb5c4}
+.scha-calendar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.scha-calendar-grid i{height:18px;border-radius:3px;background:#e7eff1}
+.scha-calendar-grid i:nth-child(5){background:#8baab7}
+.scha-calendar-grid i:nth-child(8){background:#b9d2c0}
+.scha-flow-arrow{position:absolute;top:37px;right:20%;width:37px;height:37px;display:grid;place-items:center;border-radius:50%;background:#f8faf8;color:#5b7e89;box-shadow:0 6px 17px #344d5b1a;font-size:21px}
+.scha-visual .visual-tag{color:#637f8e}
+.product-scha .incubating-note{color:#527083}
+@media(max-width:700px){.scha-board{width:72%;max-width:290px}.scha-orbit{width:210px}.scha-flow-arrow{right:14%}}
