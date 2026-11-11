@@ -95,3 +95,21 @@
 .attentio p{font-size:13px;line-height:1.85;color:#645b70;margin:0}
 @media(max-width:1050px){.venture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.incubator-step{padding:23px 20px}}
 @media(max-width:700px){.portfolio-more{margin-top:49px;padding-top:33px}.portfolio-more-heading{display:block}.portfolio-more-heading h3{font-size:24px;margin-bottom:14px}.portfolio-more-heading>p{max-width:400px}.venture-grid{grid-template-columns:1fr;gap:12px}.venture-art{width:65px;height:65px}.venture-card{padding:13px}.incubator-steps{grid-template-columns:1fr;gap:12px}.incubator-step{min-height:0}.attentio{grid-template-columns:1fr;gap:12px;padding:24px}}
+
+/* Venture studio homepage: distinct product, incubation and open-initiative chapters. */
+.hero-copy{max-width:710px}
+.hero h1{font-size:clamp(49px,5.2vw,76px);letter-spacing:-3.8px}
+.hero-description{max-width:510px}
+.incubating{background:#f2f0f5;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.foundations{border-top:0}
+.incubating .section-heading p:not(.eyebrow),.foundations .section-heading p:not(.eyebrow){max-width:330px}
+.venture-grid-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.foundation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.foundation-grid .venture-card{align-items:flex-start;min-height:132px;background:#f7f6f2}
+.foundation-grid .venture-card-copy p{color:var(--muted);font-size:12px;line-height:1.7;margin:7px 0 0}
+.venture-card h3{font-family:var(--heading);font-size:17px;font-weight:600;letter-spacing:-.5px;margin:8px 0 0;overflow-wrap:anywhere}
+.incubator-intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:35px;border-top:1px solid #d9d3e2;padding-top:24px}
+.incubator-intro p{font-size:15px;line-height:1.85;color:#615a6b;margin:0}
+.incubator-intro p:first-child{font-family:var(--heading);font-size:21px;line-height:1.6;color:var(--ink)}
+@media(max-width:1050px){.foundation-grid,.venture-grid-three{grid-template-columns:repeat(2,minmax(0,1fr))}.header nav{gap:17px}}
+@media(max-width:700px){.hero h1{font-size:clamp(43px,9vw,60px);letter-spacing:-2.4px}.venture-grid-three,.foundation-grid{grid-template-columns:1fr}.incubator-intro{grid-template-columns:1fr;gap:18px}.foundation-grid .venture-card{min-height:0}}
